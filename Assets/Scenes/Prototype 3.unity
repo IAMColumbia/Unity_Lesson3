@@ -581,6 +581,7 @@ MonoBehaviour:
   jumpForce: 10
   gravityModifier: 2
   IsOnGround: 0
+  gameOver: 0
 --- !u!65 &1281604163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -688,7 +689,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
