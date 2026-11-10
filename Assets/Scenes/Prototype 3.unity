@@ -578,8 +578,8 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
-  jumpForce: 10
-  gravityModifier: 2
+  jumpForce: 12
+  gravityModifier: 2.5
   IsOnGround: 0
   gameOver: 0
 --- !u!65 &1281604163
