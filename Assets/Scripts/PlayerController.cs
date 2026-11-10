@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float gravityModifier;
     public bool IsOnGround = true;
     public bool gameOver = false;
+    private Animator playerAnim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
       
         jumpAction.Enable();
         Physics.gravity *= gravityModifier;
+        playerAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             IsOnGround = false;
+            playerAnim.SetTrigger("Jump_trig");
         }
     }
     private void OnCollisionEnter(Collision collision)
